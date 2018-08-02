@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>FunnelStar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <section class="login-page">
+      <div class="login-page__container">
+        <a href="#funnelstar">
+          <picture>
+            <source srcset="images/logo_2.svg" media="(max-width: 520px)">
+            <source srcset="images/logo_1.svg" media="(min-width: 520px)">
+            <img class="logo" src="images/logo_1.svg" alt="FunnelStar">
+          </picture>
+        </a>
+        <div class="login-page__form">
+          <form action="" method="post">
+            <div class="form-row">
+              <label for="email" class="visuallyhidden">Adres e-mail...</label>
+              <span class="ico ico--email"></span>
+              <input type="email" name="email" id="email" required class="form-control" placeholder="Adres e-mail..." />
+            </div>
+            <div class="form-row">
+              <label for="password" class="visuallyhidden">Wpisz hasło otrzymane w SMS...</label>
+              <span class="ico ico--password"></span>
+              <input type="password" name="password" id="password" required class="form-control" placeholder="Wpisz hasło otrzymane w SMS..." />
+            </div>
+            <div class="form-row form-row--checkbox">
+              <input class="visuallyhidden" type="checkbox" name="term-accept" required id="term-accept" />
+              <label for="term-accept">Akceptuję <strong>regulamin</strong> i <strong>politykę prywatności</strong></label>
+            </div>
+            <div class="form-row form-row--button">
+              <button type="submit">Zaloguj</button>
+            </div>
+            <div class="loader">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- build:js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild  -->
+  </body>
+</html>
